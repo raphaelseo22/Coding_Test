@@ -4,12 +4,13 @@ while True:
     except:
         break
         
-    i = 0
+    i = 1
     num = 0
     while True:
-        num += 10**i
-        if num%n == 0:
-            print(i+1)
+        num = 10 * num + 1
+        num = num % n
+        if num == 0:
+            print(i)
             break
         else:
             i += 1
